@@ -1,0 +1,956 @@
+{
+ "projet": "STEP Béni Mellal – maquette 3D",
+ "unite": "metre",
+ "axe_haut": "Y",
+ "genere": "2026-10-28",
+ "parties": [
+  {
+   "id": "Bassin_de_sechage",
+   "nom": "Bassin de séchage",
+   "fichier": "modeles/Bassin_de_sechage.glb",
+   "objets": [
+    "Bassin de séchage - contenu",
+    "Bassin de séchage - parois",
+    "SE_Vannes_rouges"
+   ],
+   "triangles": 17040,
+   "couleurs": [
+    "#817F7A",
+    "#C45045",
+    "#E5DDD5"
+   ],
+   "bbox": {
+    "min": [
+     85.42,
+     5.0,
+     218.82
+    ],
+    "max": [
+     204.65,
+     6.0,
+     365.75
+    ]
+   }
+  },
+  {
+   "id": "Bassins_decantation",
+   "nom": "Bassins de décantation",
+   "fichier": "modeles/Bassins_decantation.glb",
+   "objets": [
+    "BD_Conduite_PEHD",
+    "BD_Digues",
+    "BD_Fleches",
+    "BD_Fleches_garde_corps",
+    "BD_Fond",
+    "BD_Garde_corps_passerelle",
+    "BD_Talus_beton"
+   ],
+   "triangles": 232424,
+   "couleurs": [
+    "#272730",
+    "#3FA06C",
+    "#A5996E",
+    "#D1B697",
+    "#D1CBC0",
+    "#D3C0A6"
+   ],
+   "bbox": {
+    "min": [
+     119.93,
+     2.0,
+     58.21
+    ],
+    "max": [
+     248.37,
+     6.58,
+     187.76
+    ]
+   }
+  },
+  {
+   "id": "Batiment_bloc_1",
+   "nom": "Bâtiment bloc 1",
+   "fichier": "modeles/Batiment_bloc_1.glb",
+   "objets": [
+    "Batiment_bloc_1_band",
+    "Batiment_bloc_1_mur",
+    "Batiment_bloc_1_pdv",
+    "Batiment_bloc_1_pgris",
+    "Batiment_bloc_1_toit"
+   ],
+   "triangles": 2916,
+   "couleurs": [
+    "#B3DAD3",
+    "#CED1D3",
+    "#D7957D",
+    "#DAD7D2",
+    "#ECE3D2"
+   ],
+   "bbox": {
+    "min": [
+     79.21,
+     5.0,
+     101.84
+    ],
+    "max": [
+     97.06,
+     11.6,
+     122.31
+    ]
+   }
+  },
+  {
+   "id": "Batiment_bloc_2",
+   "nom": "Bâtiment bloc 2",
+   "fichier": "modeles/Batiment_bloc_2.glb",
+   "objets": [
+    "Batiment_bloc_2_band",
+    "Batiment_bloc_2_cadre",
+    "Batiment_bloc_2_mur",
+    "Batiment_bloc_2_pgris",
+    "Batiment_bloc_2_pverte",
+    "Batiment_bloc_2_toit",
+    "Batiment_bloc_2_vitre"
+   ],
+   "triangles": 4104,
+   "couleurs": [
+    "#307C61",
+    "#45657C",
+    "#CED1D3",
+    "#D7957D",
+    "#DAD7D2",
+    "#ECE3D2",
+    "#F6F6F3"
+   ],
+   "bbox": {
+    "min": [
+     58.14,
+     5.0,
+     84.07
+    ],
+    "max": [
+     77.8,
+     13.6,
+     99.95
+    ]
+   }
+  },
+  {
+   "id": "Batiment_bloc_3",
+   "nom": "Bâtiment bloc 3",
+   "fichier": "modeles/Batiment_bloc_3.glb",
+   "objets": [
+    "Batiment_bloc_3_band",
+    "Batiment_bloc_3_mur",
+    "Batiment_bloc_3_pdv",
+    "Batiment_bloc_3_pgris",
+    "Batiment_bloc_3_toit"
+   ],
+   "triangles": 2700,
+   "couleurs": [
+    "#B3DAD3",
+    "#CED1D3",
+    "#D7957D",
+    "#DAD7D2",
+    "#ECE3D2"
+   ],
+   "bbox": {
+    "min": [
+     61.12,
+     5.0,
+     115.22
+    ],
+    "max": [
+     74.73,
+     11.6,
+     129.7
+    ]
+   }
+  },
+  {
+   "id": "Batiments_terracotta",
+   "nom": "Bâtiments annexes",
+   "fichier": "modeles/Batiments_terracotta.glb",
+   "objets": [
+    "BT_band",
+    "BT_cadre",
+    "BT_mur",
+    "BT_pdv",
+    "BT_pgris",
+    "BT_pverte",
+    "BT_toit",
+    "BT_vitre"
+   ],
+   "triangles": 77888,
+   "couleurs": [
+    "#307C61",
+    "#45657C",
+    "#B3DAD3",
+    "#CED1D3",
+    "#D7957D",
+    "#DAD7D2",
+    "#ECE3D2",
+    "#F6F6F3"
+   ],
+   "bbox": {
+    "min": [
+     23.13,
+     5.0,
+     37.61
+    ],
+    "max": [
+     263.63,
+     11.66,
+     384.32
+    ]
+   }
+  },
+  {
+   "id": "Centre_de_controle",
+   "nom": "Centre de contrôle",
+   "fichier": "modeles/Centre_de_controle.glb",
+   "objets": [
+    "CC_Balcon_inox",
+    "CC_Balcon_verre",
+    "CC_Bandeaux",
+    "CC_Cadres",
+    "CC_Etancheite_toit",
+    "CC_Murs",
+    "CC_Porte_entree",
+    "CC_Vitres"
+   ],
+   "triangles": 28500,
+   "couleurs": [
+    "#45657C",
+    "#6189C4",
+    "#C4E1E7",
+    "#CED0CE",
+    "#D7957D",
+    "#DAD7D2",
+    "#ECE3D2",
+    "#F6F6F3"
+   ],
+   "bbox": {
+    "min": [
+     216.01,
+     4.97,
+     202.58
+    ],
+    "max": [
+     233.65,
+     12.22,
+     229.84
+    ]
+   }
+  },
+  {
+   "id": "Chambre_des_pompes",
+   "nom": "Chambre des pompes",
+   "fichier": "modeles/Chambre_des_pompes.glb",
+   "objets": [
+    "CP_Toit",
+    "CP_band",
+    "CP_blanc",
+    "CP_bleu",
+    "CP_bride",
+    "CP_cadre",
+    "CP_grat",
+    "CP_grp",
+    "CP_led",
+    "CP_mur",
+    "CP_pgris",
+    "CP_pverte",
+    "CP_socle_p",
+    "CP_sol",
+    "CP_vert",
+    "CP_vitre"
+   ],
+   "triangles": 14072,
+   "couleurs": [
+    "#27A689",
+    "#307C61",
+    "#45657C",
+    "#5076C4",
+    "#59A0E1",
+    "#CED1D3",
+    "#D7957D",
+    "#D7D4CE",
+    "#DAD7D2",
+    "#DDD4C4",
+    "#E5E5DF",
+    "#EAE5D7",
+    "#ECE3D2",
+    "#F6F6F3",
+    "#FFFFFF"
+   ],
+   "bbox": {
+    "min": [
+     42.13,
+     1.8,
+     120.49
+    ],
+    "max": [
+     87.7,
+     8.9,
+     139.54
+    ]
+   }
+  },
+  {
+   "id": "Clarificateurs",
+   "nom": "Clarificateurs",
+   "fichier": "modeles/Clarificateurs.glb",
+   "objets": [
+    "CL1_Beton",
+    "CL1_Bouee",
+    "CL1_Chariot",
+    "CL1_Eau",
+    "CL1_Eau_goulotte",
+    "CL1_Garde_corps",
+    "CL1_Jupe",
+    "CL1_Lame_deversoir",
+    "CL1_Moteur",
+    "CL1_Pont",
+    "CL1_Puits_central",
+    "CL2_Beton",
+    "CL2_Bouee",
+    "CL2_Chariot",
+    "CL2_Eau",
+    "CL2_Eau_goulotte",
+    "CL2_Garde_corps",
+    "CL2_Jupe",
+    "CL2_Lame_deversoir",
+    "CL2_Moteur",
+    "CL2_Pont",
+    "CL2_Puits_central",
+    "PCL_Beton",
+    "PCL_Bouee",
+    "PCL_Chariot",
+    "PCL_Eau",
+    "PCL_Eau_goulotte",
+    "PCL_Garde_corps",
+    "PCL_Jupe",
+    "PCL_Lame_deversoir",
+    "PCL_Moteur",
+    "PCL_Pont",
+    "PCL_Puits_central"
+   ],
+   "triangles": 170128,
+   "couleurs": [
+    "#3C352C",
+    "#595959",
+    "#959086",
+    "#CED0CE",
+    "#D4CEC4",
+    "#DADAD7",
+    "#EAEAE7",
+    "#F9893F",
+    "#F9E13F"
+   ],
+   "bbox": {
+    "min": [
+     92.46,
+     5.0,
+     158.98
+    ],
+    "max": [
+     197.59,
+     8.37,
+     226.09
+    ]
+   }
+  },
+  {
+   "id": "Cuves_blanches",
+   "nom": "Cuves blanches",
+   "fichier": "modeles/Cuves_blanches.glb",
+   "objets": [
+    "Cuves_blanches_corps",
+    "Cuves_blanches_inox"
+   ],
+   "triangles": 56336,
+   "couleurs": [
+    "#E1E2E2",
+    "#F7F7F6"
+   ],
+   "bbox": {
+    "min": [
+     27.94,
+     5.0,
+     98.89
+    ],
+    "max": [
+     40.36,
+     11.9,
+     118.67
+    ]
+   }
+  },
+  {
+   "id": "Eau_sale_lavage",
+   "nom": "Eau sale de lavage",
+   "fichier": "modeles/Eau_sale_lavage.glb",
+   "objets": [
+    "ES_armoire",
+    "ES_bet",
+    "ES_coffret",
+    "ES_eau",
+    "ES_galva",
+    "ES_grat",
+    "ES_jaune",
+    "ES_noir",
+    "ES_sale",
+    "ES_tuy",
+    "ES_vert"
+   ],
+   "triangles": 20060,
+   "couleurs": [
+    "#27A689",
+    "#3F617C",
+    "#5D593F",
+    "#898989",
+    "#CED1D4",
+    "#D7D4CE",
+    "#DADDDD",
+    "#E5E5DF",
+    "#E7CE59",
+    "#E7E7E7",
+    "#F1ECDD"
+   ],
+   "bbox": {
+    "min": [
+     12.17,
+     0.7,
+     133.34
+    ],
+    "max": [
+     27.77,
+     9.2,
+     151.34
+    ]
+   }
+  },
+  {
+   "id": "Enceinte",
+   "nom": "Socle & mur d'enceinte",
+   "fichier": "modeles/Enceinte.glb",
+   "objets": [
+    "Mur_enceinte",
+    "Mur_enceinte_chaperon",
+    "Socle"
+   ],
+   "triangles": 22687,
+   "couleurs": [
+    "#C8C4BC",
+    "#CBCBCB",
+    "#D1B697",
+    "#D4D0C8",
+    "#D7957D",
+    "#ECE3D2"
+   ],
+   "bbox": {
+    "min": [
+     -289.7,
+     0.0,
+     -385.32
+    ],
+    "max": [
+     289.7,
+     7.5,
+     385.32
+    ]
+   }
+  },
+  {
+   "id": "Espaces_verts",
+   "nom": "Espaces verts",
+   "fichier": "modeles/Espaces_verts.glb",
+   "objets": [
+    "Gazon_paspalum"
+   ],
+   "triangles": 104672,
+   "couleurs": [
+    "#78A74D"
+   ],
+   "bbox": {
+    "min": [
+     -288.95,
+     5.0,
+     -384.75
+    ],
+    "max": [
+     289.47,
+     5.1,
+     385.19
+    ]
+   }
+  },
+  {
+   "id": "Filtration_coagulation",
+   "nom": "Filtration / Coagulation",
+   "fichier": "modeles/Filtration_coagulation.glb",
+   "objets": [
+    "CV_Chambre_vannes_dalle",
+    "CV_Chambre_vannes_terra",
+    "CV_Chambre_vannes_trappe",
+    "CV_Chambre_vannes_vanne",
+    "CV_Chambre_vannes_vert",
+    "FC_Escalier_arriere",
+    "FC_act",
+    "FC_bet",
+    "FC_coffret",
+    "FC_eau",
+    "FC_galva",
+    "FC_grat",
+    "FC_jaune",
+    "FC_mous",
+    "FC_noir",
+    "FC_orange",
+    "FC_turq",
+    "FC_vert"
+   ],
+   "triangles": 84628,
+   "couleurs": [
+    "#272730",
+    "#27A689",
+    "#3FC4CE",
+    "#4B4538",
+    "#959599",
+    "#B3B6BC",
+    "#C4953F",
+    "#D7957D",
+    "#D7D4CE",
+    "#DADDDD",
+    "#E5E5DF",
+    "#E7E7E7",
+    "#ECE3D2",
+    "#EDEDEB",
+    "#F9F1B3"
+   ],
+   "bbox": {
+    "min": [
+     37.3,
+     1.8,
+     123.88
+    ],
+    "max": [
+     86.39,
+     13.11,
+     157.87
+    ]
+   }
+  },
+  {
+   "id": "Fosse_vannes_LB",
+   "nom": "Fosse à vannes LB",
+   "fichier": "modeles/Fosse_vannes_LB.glb",
+   "objets": [
+    "Coffrets_electriques",
+    "Conduite_principale",
+    "Fosse_parois",
+    "Inox_portiques",
+    "Piquages",
+    "Plateforme_dalle",
+    "Vannes_bleues"
+   ],
+   "triangles": 45668,
+   "couleurs": [
+    "#59A0E1",
+    "#C8C4BC",
+    "#CED0CE",
+    "#CED1D4",
+    "#DDD4C5",
+    "#F1F1EF"
+   ],
+   "bbox": {
+    "min": [
+     163.48,
+     2.8,
+     234.3
+    ],
+    "max": [
+     215.41,
+     8.84,
+     275.39
+    ]
+   }
+  },
+  {
+   "id": "Lagunes",
+   "nom": "Lagunes",
+   "fichier": "modeles/Lagunes.glb",
+   "objets": [
+    "LG_Crete_herbe",
+    "LG_Eau",
+    "LG_Fond",
+    "LG_Talus_enrochement"
+   ],
+   "triangles": 349446,
+   "couleurs": [
+    "#353C3C",
+    "#6F8655",
+    "#98A671",
+    "#CABAAC",
+    "#CBCBCB"
+   ],
+   "bbox": {
+    "min": [
+     -219.54,
+     2.83,
+     -347.05
+    ],
+    "max": [
+     235.59,
+     5.5,
+     103.63
+    ]
+   }
+  },
+  {
+   "id": "Lits_bacteriens",
+   "nom": "Lits bactériens",
+   "fichier": "modeles/Lits_bacteriens.glb",
+   "objets": [
+    "LB1_Distributeur",
+    "LB1_Escalier",
+    "LB1_Garnissage",
+    "LB1_Grilles",
+    "LB1_Paroi",
+    "LB2_Distributeur",
+    "LB2_Escalier",
+    "LB2_Garnissage",
+    "LB2_Grilles",
+    "LB2_Paroi",
+    "LB3_Distributeur",
+    "LB3_Escalier",
+    "LB3_Garnissage",
+    "LB3_Grilles",
+    "LB3_Paroi",
+    "LB4_Distributeur",
+    "LB4_Escalier",
+    "LB4_Garnissage",
+    "LB4_Grilles",
+    "LB4_Paroi"
+   ],
+   "triangles": 32464,
+   "couleurs": [
+    "#303035",
+    "#3F3F3F",
+    "#CED0CE",
+    "#DA957C"
+   ],
+   "bbox": {
+    "min": [
+     144.97,
+     4.98,
+     216.6
+    ],
+    "max": [
+     226.87,
+     11.0,
+     296.31
+    ]
+   }
+  },
+  {
+   "id": "Parking",
+   "nom": "Parking",
+   "fichier": "modeles/Parking.glb",
+   "objets": [
+    "Parking_abri"
+   ],
+   "triangles": 360,
+   "couleurs": [
+    "#59483C",
+    "#D7D4CE",
+    "#EFF0F1"
+   ],
+   "bbox": {
+    "min": [
+     217.19,
+     5.0,
+     168.69
+    ],
+    "max": [
+     238.61,
+     8.12,
+     190.7
+    ]
+   }
+  },
+  {
+   "id": "Portails",
+   "nom": "Portails",
+   "fichier": "modeles/Portails.glb",
+   "objets": [
+    "Portail_entree",
+    "Portail_entree_2"
+   ],
+   "triangles": 672,
+   "couleurs": [
+    "#163F89",
+    "#2155AD"
+   ],
+   "bbox": {
+    "min": [
+     80.29,
+     5.05,
+     193.75
+    ],
+    "max": [
+     263.14,
+     7.25,
+     238.01
+    ]
+   }
+  },
+  {
+   "id": "Pretraitement",
+   "nom": "Arrivée & Prétraitement",
+   "fichier": "modeles/Pretraitement.glb",
+   "objets": [
+    "PT_B01_Bache_cabine",
+    "PT_B04_Degrillage_grossier",
+    "PT_B05_Degrillage",
+    "PT_Dalle_beton",
+    "PT_Dalle_joints",
+    "PT_P1_Classificateur_sable",
+    "PT_P2_Dessableur",
+    "PT_P3_Arrivee"
+   ],
+   "triangles": 41471,
+   "couleurs": [
+    "#272727",
+    "#3F3F3F",
+    "#3F76B3",
+    "#454545",
+    "#4589E1",
+    "#5076C4",
+    "#5981AD",
+    "#59A0E1",
+    "#615D59",
+    "#816950",
+    "#868179",
+    "#AA8159",
+    "#B3ADA6",
+    "#BCBCBC",
+    "#C4C5C7",
+    "#CEC8BF",
+    "#CECBC5",
+    "#CED1D4",
+    "#D7D4CE",
+    "#DADDDD",
+    "#DDDDDA",
+    "#DFDACE",
+    "#E1E2E2",
+    "#E5E5DF",
+    "#E7E7E7",
+    "#EDEDEB",
+    "#EFEFEC",
+    "#F6F6F3",
+    "#F9ED3F"
+   ],
+   "bbox": {
+    "min": [
+     199.67,
+     5.0,
+     -46.17
+    ],
+    "max": [
+     259.95,
+     15.15,
+     64.1
+    ]
+   }
+  },
+  {
+   "id": "Station_pompage",
+   "nom": "Station de pompage",
+   "fichier": "modeles/Station_pompage.glb",
+   "objets": [
+    "SP_Analyseurs",
+    "SP_Analyseurs_chaines",
+    "SP_Analyseurs_ecrans",
+    "SP_Analyseurs_poteaux",
+    "SP_BD_Conduite_PEHD",
+    "SP_Chambres_repartition_bet",
+    "SP_Chambres_repartition_eau",
+    "SP_Chambres_repartition_inox",
+    "SP_Chambres_repartition_jet",
+    "SP_Chambres_repartition_mous",
+    "SP_Chambres_repartition_trou",
+    "SP_Chambres_repartition_turq",
+    "SP_LB_Metal",
+    "SP_Muret_terracotta",
+    "SP_SP_Beton",
+    "SP_SP_Beton_humide",
+    "SP_SP_Caillebotis",
+    "SP_SP_Charpente_verte",
+    "SP_SP_Eau_brute",
+    "SP_SP_Jaune",
+    "SP_SP_Mousse",
+    "SP_SP_Pompe",
+    "SP_SP_Tole_grise",
+    "SP_SP_Trappe",
+    "SP_Tuyau_gris",
+    "SP_Vanne_bleue"
+   ],
+   "triangles": 31048,
+   "couleurs": [
+    "#272730",
+    "#27A689",
+    "#3F617C",
+    "#454545",
+    "#5989C4",
+    "#59A0E1",
+    "#7C8189",
+    "#7CC4CE",
+    "#898989",
+    "#959599",
+    "#A0B37C",
+    "#CED0CE",
+    "#CED1D4",
+    "#D7957D",
+    "#D7D4CE",
+    "#DFD4C4",
+    "#E5E5DF",
+    "#EDEDEB",
+    "#F3F3F1",
+    "#F9ED3F"
+   ],
+   "bbox": {
+    "min": [
+     30.9,
+     0.2,
+     158.57
+    ],
+    "max": [
+     68.61,
+     12.48,
+     181.41
+    ]
+   }
+  },
+  {
+   "id": "Vegetation",
+   "nom": "Végétation (arbres et massifs)",
+   "fichier": "modeles/Vegetation.glb",
+   "objets": [
+    "VG_Cypres",
+    "VG_Eucalyptus",
+    "VG_Gazania",
+    "VG_Romarin",
+    "VG_Rosier"
+   ],
+   "triangles": 1676428,
+   "couleurs": [
+    "#4A7640",
+    "#5D7D44",
+    "#897661",
+    "#89A081",
+    "#94A17C",
+    "#A2A85A",
+    "#DAD1C4"
+   ],
+   "bbox": {
+    "min": [
+     -287.03,
+     4.99,
+     -384.54
+    ],
+    "max": [
+     286.85,
+     21.64,
+     383.37
+    ]
+   }
+  },
+  {
+   "id": "Voirie",
+   "nom": "Voirie",
+   "fichier": "modeles/Voirie.glb",
+   "objets": [
+    "Bordures_blanches",
+    "Bordures_vertes",
+    "Marquage_axial",
+    "Route",
+    "Trottoir_dallage_2m"
+   ],
+   "triangles": 629758,
+   "couleurs": [
+    "#30AA76",
+    "#747477",
+    "#BCB9B2",
+    "#F7F7F5",
+    "#F9F9F7"
+   ],
+   "bbox": {
+    "min": [
+     -224.55,
+     5.0,
+     -352.05
+    ],
+    "max": [
+     267.29,
+     5.2,
+     367.26
+    ]
+   }
+  },
+  {
+   "id": "Zone_UV_dalle_basse",
+   "nom": "Zone UV",
+   "fichier": "modeles/Zone_UV_dalle_basse.glb",
+   "objets": [
+    "UV_bet",
+    "UV_cable",
+    "UV_dalle",
+    "UV_eau",
+    "UV_grat",
+    "UV_inox",
+    "UV_mous",
+    "UV_sombre",
+    "UV_trappe",
+    "UV_vert"
+   ],
+   "triangles": 12440,
+   "couleurs": [
+    "#272730",
+    "#27A689",
+    "#3F617C",
+    "#4B4538",
+    "#959599",
+    "#CBCBCB",
+    "#D7D4CE",
+    "#DFD4C4",
+    "#E1E2E2",
+    "#E5E5DF",
+    "#EDEDEB"
+   ],
+   "bbox": {
+    "min": [
+     45.1,
+     2.7,
+     92.67
+    ],
+    "max": [
+     84.01,
+     6.7,
+     126.56
+    ]
+   }
+  }
+ ],
+ "site": {
+  "min": [
+   -289.7,
+   0.0,
+   -385.32
+  ],
+  "max": [
+   289.7,
+   21.64,
+   385.32
+  ]
+ }
+}

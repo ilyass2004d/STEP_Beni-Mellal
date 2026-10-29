@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "hero": {
+    "eyebrow": "Béni Mellal · Maroc",
+    "title": "L'eau en devenir.",
+    "subtitle": "Explorer la station d'épuration des eaux usées de Béni Mellal.",
+    "description": "Une immersion au cœur des infrastructures, des ouvrages et des processus qui participent à la gestion des eaux usées.",
+    "primaryCta": "Explorer la station",
+    "secondaryCta": "Découvrir le parcours",
+    "media": {
+      "src": "/media/video/hero-origine.mp4",
+      "alt": "D'un robinet domestique à une canalisation souterraine : séquence d'ouverture.",
+      "kind": "illustration"
+    }
+  },
+  "chapters": [
+    {
+      "id": "origine",
+      "number": "01",
+      "eyebrow": "À l'origine",
+      "title": "Un geste quotidien.",
+      "text": "Tout commence par un geste quotidien. Après son utilisation, l'eau entre dans un parcours invisible, mais essentiel.",
+      "secondary": "Eaux de cuisine, de salle de bain et de toilettes : les eaux usées domestiques se chargent de graisses, de détergents, de matières organiques et de germes.",
+      "secondarySource": "rapport-visite",
+      "media": {
+        "src": "/media/video/ch01-robinet.mp4",
+        "alt": "Eau s'écoulant d'un robinet dans une vasque.",
+        "kind": "illustration"
+      },
+      "visible": true
+    },
+    {
+      "id": "reseau",
+      "number": "02",
+      "eyebrow": "Sous la ville",
+      "title": "Un parcours invisible.",
+      "text": "Sous les rues de Béni Mellal, le réseau d'assainissement collecte et achemine les eaux usées vers les installations de traitement.",
+      "secondary": "Le réseau qui dessert Béni Mellal et Mghila est de type unitaire : eaux usées domestiques et eaux pluviales y circulent ensemble jusqu'à l'entrée de la station.",
+      "secondarySource": "rapport-visite",
+      "media": {
+        "src": "/media/video/ch02-reseau.mp4",
+        "alt": "Intérieur d'une canalisation souterraine où s'écoule de l'eau.",
+        "kind": "illustration",
+        "caption": "Vue de principe : elle ne représente pas le réseau réel de Béni Mellal."
+      },
+      "visible": true
+    },
+    {
+      "id": "station",
+      "number": "03",
+      "eyebrow": "La station",
+      "title": "À destination.",
+      "text": "À destination, la station rassemble des ouvrages et des équipements dont les fonctions s'inscrivent dans une chaîne de traitement.",
+      "secondary": "La STEP s'étend sur environ 18 ha, à près de 2 km de la ville, le long de la route provinciale P3219.",
+      "secondarySource": "rapport-visite",
+      "media": {
+        "src": "/media/renders/vue-filiere",
+        "alt": "Vue aérienne de la maquette 3D : lits bactériens circulaires, bassins, bâtiments et voirie de la station.",
+        "kind": "rendu",
+        "caption": "Rendu de la maquette 3D par Ilyass Zerqtouni."
+      },
+      "visible": true
+    },
+    {
+      "id": "ouvrages",
+      "number": "04",
+      "eyebrow": "Les ouvrages",
+      "title": "La chaîne de traitement.",
+      "text": "De l'ouvrage d'entrée au pompage des eaux traitées, chaque ouvrage occupe une place précise dans la filière. L'ordre suit le synoptique de la station.",
+      "visible": true
+    },
+    {
+      "id": "apres",
+      "number": "05",
+      "eyebrow": "Après le traitement",
+      "title": "Comprendre l'eau.",
+      "text": "Comprendre le traitement des eaux usées, c'est aussi mieux comprendre les enjeux de l'eau, de l'environnement et des territoires.",
+      "secondary": "À Béni Mellal, les eaux traitées sont pompées en sortie de station. Selon le rapport de visite, elles sont destinées au lavage des phosphates du groupe OCP sur le site de Khouribga ; le synoptique de la station indique « Pompage eaux traitées (vers RMC FBS) ».",
+      "secondarySource": "rapport-visite",
+      "media": {
+        "src": "/media/photos/labo-echantillons",
+        "alt": "Quatre béchers alignés au laboratoire de la station, de l'eau trouble à l'eau claire.",
+        "kind": "photo",
+        "caption": "Échantillons relevés à différents stades de l'épuration, laboratoire de la STEP, visite du 10/12/2025."
+      },
+      "visible": true
+    }
+  ],
+  "stages": [
+    { "id": "pretraitement", "label": "Prétraitement" },
+    { "id": "primaire", "label": "Traitement primaire" },
+    { "id": "secondaire", "label": "Traitement secondaire" },
+    { "id": "maturation", "label": "Maturation" },
+    { "id": "tertiaire", "label": "Traitement tertiaire" },
+    { "id": "boues", "label": "Filière boues" },
+    { "id": "supervision", "label": "Supervision" },
+    { "id": "annexe", "label": "Annexes" }
+  ],
+  "components": [
+    {
+      "id": "pretraitement",
+      "order": 1,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Arrivée et prétraitement",
+      "technicalName": "Ouvrage d'entrée, dégrillage, relevage, comptage, dessablage",
+      "stage": "pretraitement",
+      "verification": "documente",
+      "shortDescription": "La tête de station : l'eau brute y est débarrassée des déchets volumineux et des sables avant tout traitement.",
+      "role": "Les eaux brutes traversent d'abord un dégrillage grossier puis un dégrillage fin qui retiennent les déchets solides, collectés dans une benne. Elles sont ensuite relevées, comptées par un débitmètre, puis dessablées dans un dessableur de type vortex ; les sables extraits passent par un classificateur avant d'être évacués.",
+      "details": "Un by-pass placé avant le dégrillage permet de dériver une partie des débits lors de pointes exceptionnelles ou d'opérations de maintenance. Par temps de pluie, le réseau unitaire apporte des particules argileuses qui augmentent la charge en matières en suspension.",
+      "modelParts": ["Pretraitement"],
+      "photos": [
+        { "src": "/media/photos/degrillage", "alt": "Portique du dégrilleur au-dessus d'un canal, avec escalier d'accès.", "kind": "photo", "caption": "Dégrillage." },
+        { "src": "/media/photos/degrillage-benne", "alt": "Benne remplie de déchets retenus par le dégrilleur.", "kind": "photo", "caption": "Déchets retenus par le dégrillage." },
+        { "src": "/media/photos/dessableur", "alt": "Agitateur bleu au-dessus du dessableur.", "kind": "photo", "caption": "Dessableur." },
+        { "src": "/media/photos/classificateur", "alt": "Classificateur à sable incliné en acier inoxydable.", "kind": "photo", "caption": "Classificateur à sable." }
+      ],
+      "diagram": { "src": "/media/photos/synoptique", "alt": "Synoptique imprimé de la station d'épuration de Béni Mellal.", "kind": "schema", "caption": "Synoptique de la station, document affiché sur site." },
+      "parameters": [
+        { "label": "Dégrillage grossier", "value": "14 mm", "source": "rapport-visite" },
+        { "label": "Dégrillage fin", "value": "8 à 12 mm", "source": "rapport-visite" },
+        { "label": "Type de dessableur", "value": "Vortex", "source": "rapport-visite" }
+      ],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"]
+    },
+    {
+      "id": "bassins-anaerobies",
+      "order": 2,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Bassins anaérobies",
+      "technicalName": "Décantation primaire",
+      "stage": "primaire",
+      "verification": "documente",
+      "shortDescription": "Quatre grands bassins en série où les matières en suspension décantent et où la matière organique se dégrade en l'absence d'oxygène.",
+      "role": "Le long temps de séjour permet aux particules de se déposer au fond des bassins. La charge particulaire et organique est ainsi réduite avant le traitement biologique, ce qui allège la filière secondaire.",
+      "details": "Le fonctionnement en série assure la continuité du traitement si l'un des bassins est en maintenance. Les boues décantées sont dirigées vers les lits de séchage.",
+      "modelParts": ["Bassins_decantation"],
+      "photos": [
+        { "src": "/media/photos/bassins-anaerobies", "alt": "Bassin à la surface sombre, bordé d'enrochements.", "kind": "photo", "caption": "Bassin anaérobie." },
+        { "src": "/media/photos/bassins-anaerobies-2", "alt": "Vue d'un bassin depuis la piste de service.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/bassins-decantation", "alt": "Rendu de la maquette : quatre bassins rectangulaires avec passerelles.", "kind": "rendu" },
+      "parameters": [
+        { "label": "Nombre de bassins", "value": "4", "source": "synoptique" },
+        { "label": "Longueur", "value": "100 m", "source": "rapport-visite" },
+        { "label": "Largeur", "value": "50 m", "source": "rapport-visite" },
+        { "label": "Profondeur", "value": "3,80 m", "source": "rapport-visite" },
+        { "label": "Volume unitaire", "value": "19 000 m³", "source": "rapport-visite" },
+        { "label": "Volume total", "value": "76 000 m³", "source": "rapport-visite" }
+      ],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"],
+      "note": "Le synoptique les désigne « bassins anaérobies » ; le rapport de visite les décrit comme bassins de décantation primaire. La maquette les nomme « Bassins de décantation »."
+    },
+    {
+      "id": "lits-sechage",
+      "order": 3,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Lits de séchage",
+      "stage": "boues",
+      "verification": "documente",
+      "shortDescription": "Les boues issues de la décantation y sont déshydratées naturellement.",
+      "role": "Les boues extraites des bassins anaérobies y sont étalées et perdent leur eau par déshydratation naturelle. Elles sont ensuite généralement orientées vers la filière de traitement des déchets solides.",
+      "modelParts": ["Bassin_de_sechage"],
+      "photos": [],
+      "render": { "src": "/media/renders/sechage", "alt": "Rendu de la maquette : casiers de séchage des boues au sol craquelé.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["synoptique", "rapport-visite"],
+      "note": "Aucune photographie de cet ouvrage n'a encore été identifiée avec certitude."
+    },
+    {
+      "id": "fosse-vannes-lb",
+      "order": 4,
+      "visible": true,
+      "inNarrative": false,
+      "name": "Fosse à vannes des lits bactériens",
+      "stage": "secondaire",
+      "verification": "partiel",
+      "shortDescription": "Une fosse technique où une conduite principale se ramifie en piquages équipés de vannes.",
+      "role": "Située à proximité des lits bactériens (« LB »), la fosse regroupe la conduite principale, ses piquages, les vannes et les coffrets électriques associés.",
+      "modelParts": ["Fosse_vannes_LB"],
+      "photos": [
+        { "src": "/media/photos/fosse-vannes", "alt": "Fosse en béton avec une conduite galvanisée et une série de vannes bleues.", "kind": "photo", "caption": "Conduite et vannes dans la fosse." }
+      ],
+      "render": { "src": "/media/renders/fosse-vannes", "alt": "Rendu de la maquette : fosse longue avec vannes bleues et portiques.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["photos-visite"],
+      "note": "Son rôle exact dans l'alimentation des lits bactériens n'est pas détaillé dans la documentation disponible."
+    },
+    {
+      "id": "lits-bacteriens",
+      "order": 5,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Lits bactériens",
+      "technicalName": "Filtres bactériens, traitement biologique aérobie",
+      "stage": "secondaire",
+      "verification": "documente",
+      "shortDescription": "Quatre tours circulaires où un biofilm bactérien dégrade la matière organique dissoute.",
+      "role": "L'eau est répartie par un distributeur rotatif au-dessus d'un garnissage. Les micro-organismes fixés sur ce support, sous forme de biofilm, dégradent la matière organique en présence d'oxygène ; une partie devient eau et gaz carbonique, le reste forme de la biomasse évacuée sous forme de boues.",
+      "details": "Le temps de passage de l'eau dans le lit est très court, de l'ordre de quelques minutes. Les conditions d'arrosage règlent le détachement du biofilm, et donc la stabilité du traitement.",
+      "modelParts": ["Lits_bacteriens"],
+      "photos": [
+        { "src": "/media/photos/lits-exterieur", "alt": "Deux grandes tours cylindriques couleur terre cuite.", "kind": "photo", "caption": "Les lits bactériens vus depuis la voirie." },
+        { "src": "/media/photos/lits-garnissage", "alt": "Sommet d'un lit bactérien : garnissage noir et bras du distributeur.", "kind": "photo", "caption": "Garnissage et distributeur." }
+      ],
+      "render": { "src": "/media/renders/lits-bacteriens", "alt": "Rendu de la maquette : quatre lits bactériens circulaires entourés de végétation.", "kind": "rendu" },
+      "parameters": [
+        { "label": "Nombre de lits", "value": "4, en parallèle", "source": "rapport-visite" },
+        { "label": "Alimentation", "value": "16 pompes avec filtres de protection et vannes de recyclage", "source": "rapport-visite" }
+      ],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"]
+    },
+    {
+      "id": "clarificateurs",
+      "order": 6,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Clarificateurs",
+      "technicalName": "Décantation secondaire",
+      "stage": "secondaire",
+      "verification": "partiel",
+      "shortDescription": "Des bassins circulaires où l'eau se sépare des boues formées par le traitement biologique.",
+      "role": "Au repos, les boues, plus lourdes que l'eau, se déposent au fond, tandis qu'un pont tournant parcourt l'ouvrage. L'eau clarifiée déborde par les lames déversoirs vers la suite de la filière.",
+      "details": "Le synoptique fait figurer une station de pompage des boues (« SP puits à boue ») et une station de pompage des écumes (« SP écume ») ; les boues repartent vers les bassins anaérobies.",
+      "modelParts": ["Clarificateurs"],
+      "photos": [
+        { "src": "/media/photos/clarificateur", "alt": "Clarificateur circulaire rempli d'eau sombre, pont racleur au premier plan.", "kind": "photo", "caption": "Clarificateur." },
+        { "src": "/media/photos/clarificateur-deversoir", "alt": "Lame déversoir crantée sur le pourtour d'un clarificateur.", "kind": "photo", "caption": "Lame déversoir." }
+      ],
+      "render": { "src": "/media/renders/clarificateur", "alt": "Rendu de la maquette : clarificateur et son pont tournant.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"],
+      "note": "La maquette comporte trois ouvrages circulaires dans ce groupe ; le synoptique en représente deux. Le nombre et la désignation de chacun restent à confirmer."
+    },
+    {
+      "id": "maturation",
+      "order": 7,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Bassins de maturation",
+      "technicalName": "Lagunage de finition",
+      "stage": "maturation",
+      "verification": "documente",
+      "shortDescription": "Quatre vastes lagunes qui affinent la qualité de l'eau clarifiée.",
+      "role": "En fin d'épuration par lagunage, ces bassins contribuent à la désinfection des effluents et réduisent la pollution résiduelle, notamment particulaire et organique.",
+      "details": "Leur conception vise à limiter les nuisances olfactives et à empêcher la croissance des végétaux sur les berges, afin de réduire le développement des algues.",
+      "modelParts": ["Lagunes"],
+      "photos": [
+        { "src": "/media/photos/maturation", "alt": "Grande lagune calme bordée d'un talus enroché sous un ciel couvert.", "kind": "photo", "caption": "Bassin de maturation." },
+        { "src": "/media/photos/maturation-2", "alt": "Berge enrochée d'un bassin de maturation, montagnes en arrière-plan.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/lagunes", "alt": "Rendu aérien de la maquette : les bassins de maturation au premier plan.", "kind": "rendu" },
+      "parameters": [
+        { "label": "Nombre de bassins", "value": "4", "source": "synoptique" },
+        { "label": "Superficie", "value": "≈ 6,2 ha", "source": "rapport-visite" }
+      ],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"],
+      "note": "Les bassins de maturation correspondent à l'objet « Lagunes » de la maquette."
+    },
+    {
+      "id": "station-pompage",
+      "order": 8,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Station de pompage et analyseurs",
+      "stage": "tertiaire",
+      "verification": "partiel",
+      "shortDescription": "Pompage, répartition et mesure en continu de la qualité de l'eau avant le traitement tertiaire.",
+      "role": "Le rapport de visite décrit, en amont du traitement tertiaire, une station de relevage équipée d'un débitmètre à ultrasons et de capteurs mesurant en continu la turbidité, les matières en suspension, la conductivité électrique et le pH. Ces données sont transmises au système de supervision du centre de contrôle.",
+      "modelParts": ["Station_pompage"],
+      "photos": [
+        { "src": "/media/photos/analyseurs", "alt": "Rangée d'analyseurs sous abri, sondes plongeant dans un canal.", "kind": "photo", "caption": "Analyseurs en ligne." },
+        { "src": "/media/photos/analyseur-ecran", "alt": "Écran d'un analyseur affichant une mesure.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/station-pompage", "alt": "Rendu de la maquette : station de pompage sous charpente métallique verte.", "kind": "rendu" },
+      "parameters": [
+        { "label": "Mesures en continu", "value": "Débit (ultrasons), turbidité, MES, conductivité, pH", "source": "rapport-visite" }
+      ],
+      "sources": ["rapport-visite", "photos-visite"],
+      "note": "La correspondance exacte entre cet ensemble de la maquette et la « station de relevage » du rapport reste à confirmer."
+    },
+    {
+      "id": "filtration-coagulation",
+      "order": 9,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Coagulation, floculation et filtration",
+      "technicalName": "Traitement tertiaire physico-chimique",
+      "stage": "tertiaire",
+      "verification": "documente",
+      "shortDescription": "L'affinage final : les particules les plus fines sont agglomérées puis retenues par des filtres à sable.",
+      "role": "Du chlorure ferrique (FeCl₃) et du charbon actif en poudre sont injectés pour déstabiliser les particules colloïdales et adsorber les micropolluants. Les particules s'agglomèrent ensuite en flocs, puis l'eau traverse des filtres à sable.",
+      "details": "Les filtres à sable sont exploités en alternance pour assurer la continuité du traitement pendant leur nettoyage. Le lavage utilise de l'eau traitée ; les eaux sales de lavage sont renvoyées en tête de station.",
+      "modelParts": ["Filtration_coagulation"],
+      "photos": [
+        { "src": "/media/photos/tertiaire-bassins", "alt": "Bassin agité avec garde-corps verts et moteur d'agitateur.", "kind": "photo", "caption": "Bassins du traitement tertiaire." },
+        { "src": "/media/photos/tertiaire-canal", "alt": "Canal en béton avec goulottes parallèles et eau écumeuse.", "kind": "photo" },
+        { "src": "/media/photos/tertiaire-galerie", "alt": "Galerie technique avec conduites et vannes.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/filtration", "alt": "Rendu de la maquette : bâtiment de filtration et coagulateurs.", "kind": "rendu" },
+      "parameters": [
+        { "label": "Réactifs", "value": "Chlorure ferrique (FeCl₃), charbon actif en poudre", "source": "rapport-visite" },
+        { "label": "Filtres à sable", "value": "10, exploités en alternance", "source": "rapport-visite" }
+      ],
+      "sources": ["synoptique", "rapport-visite", "photos-visite"],
+      "note": "L'attribution de chaque photographie à un ouvrage précis du tertiaire reste à vérifier."
+    },
+    {
+      "id": "zone-uv",
+      "order": 10,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Zone UV",
+      "stage": "tertiaire",
+      "verification": "partiel",
+      "shortDescription": "Des modules à rayonnement ultraviolet installés au-dessus d'un canal.",
+      "role": "Les photographies de la visite montrent des modules UV posés sur un canal. Le rayonnement ultraviolet est l'un des moyens de désinfection de l'eau cités par le rapport de visite.",
+      "modelParts": ["Zone_UV_dalle_basse"],
+      "photos": [
+        { "src": "/media/photos/uv", "alt": "Modules UV en acier inoxydable posés sur un canal, caillebotis autour.", "kind": "photo", "caption": "Modules UV." }
+      ],
+      "render": { "src": "/media/renders/zone-uv", "alt": "Rendu de la maquette : dalle basse de la zone UV.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["photos-visite", "rapport-visite"],
+      "note": "La place exacte de cette étape dans la filière n'est pas décrite dans la documentation disponible."
+    },
+    {
+      "id": "eau-sale-lavage",
+      "order": 11,
+      "visible": true,
+      "inNarrative": false,
+      "name": "Bassin des eaux sales de lavage",
+      "stage": "tertiaire",
+      "verification": "documente",
+      "shortDescription": "Il recueille les eaux de nettoyage des filtres à sable.",
+      "role": "Les eaux issues du lavage des filtres y sont collectées, puis renvoyées vers l'amont de la station, au niveau du traitement primaire, pour être de nouveau traitées.",
+      "modelParts": ["Eau_sale_lavage"],
+      "photos": [],
+      "render": { "src": "/media/renders/eau-sale", "alt": "Rendu de la maquette : bassin rectangulaire des eaux sales de lavage.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["rapport-visite"]
+    },
+    {
+      "id": "centre-controle",
+      "order": 12,
+      "visible": true,
+      "inNarrative": true,
+      "name": "Centre de contrôle",
+      "stage": "supervision",
+      "verification": "documente",
+      "shortDescription": "Le poste de supervision depuis lequel le traitement est piloté.",
+      "role": "Les mesures des capteurs y sont transmises en continu. Le traitement tertiaire est piloté depuis une salle de contrôle équipée de vannes électriques, pour gérer les débits et les doses de réactifs.",
+      "modelParts": ["Centre_de_controle"],
+      "photos": [
+        { "src": "/media/photos/supervision", "alt": "Écran de supervision montrant le plan général de la station.", "kind": "photo", "caption": "Écran de supervision." },
+        { "src": "/media/photos/centre-controle", "alt": "Salle de contrôle avec postes de travail et grande baie vitrée.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/centre-controle", "alt": "Rendu de la maquette : bâtiment du centre de contrôle à balcons vitrés.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["rapport-visite", "photos-visite"]
+    },
+    {
+      "id": "chambre-pompes",
+      "order": 13,
+      "visible": true,
+      "inNarrative": false,
+      "name": "Chambre des pompes",
+      "verification": "a-documenter",
+      "stage": "annexe",
+      "shortDescription": "Bâtiment technique abritant des pompes et leurs conduites.",
+      "modelParts": ["Chambre_des_pompes"],
+      "photos": [],
+      "render": { "src": "/media/renders/chambre-pompes", "alt": "Rendu de la maquette : façade de la chambre des pompes.", "kind": "rendu" },
+      "parameters": [],
+      "sources": [],
+      "note": "Fonction à documenter."
+    },
+    {
+      "id": "cuves",
+      "order": 14,
+      "visible": true,
+      "inNarrative": false,
+      "name": "Cuves de stockage",
+      "verification": "a-documenter",
+      "stage": "annexe",
+      "shortDescription": "Ensemble de cuves blanches verticales à côté des bâtiments techniques.",
+      "modelParts": ["Cuves_blanches"],
+      "photos": [],
+      "render": { "src": "/media/renders/cuves", "alt": "Rendu de la maquette : cuves blanches verticales.", "kind": "rendu" },
+      "parameters": [],
+      "sources": [],
+      "note": "Contenu et fonction à documenter."
+    },
+    {
+      "id": "batiments",
+      "order": 15,
+      "visible": true,
+      "inNarrative": false,
+      "name": "Bâtiments techniques et annexes",
+      "verification": "a-documenter",
+      "stage": "annexe",
+      "shortDescription": "Bâtiments en terre cuite répartis sur le site.",
+      "modelParts": ["Batiments_terracotta", "Batiment_bloc_1", "Batiment_bloc_2", "Batiment_bloc_3"],
+      "photos": [
+        { "src": "/media/photos/batiments", "alt": "Bâtiment technique couleur brique sous la pluie.", "kind": "photo" }
+      ],
+      "render": { "src": "/media/renders/batiments", "alt": "Rendu de la maquette : blocs en terre cuite.", "kind": "rendu" },
+      "parameters": [],
+      "sources": ["photos-visite"],
+      "note": "La station comprend notamment un laboratoire d'analyses ; son emplacement dans la maquette reste à préciser."
+    }
+  ],
+  "facts": [
+    { "label": "Superficie", "value": "≈ 18 ha", "source": "rapport-visite" },
+    { "label": "Réseau", "value": "Unitaire", "source": "rapport-visite" },
+    { "label": "Communes desservies", "value": "Béni Mellal et Mghila", "source": "rapport-visite" },
+    { "label": "Emprise de la maquette", "value": "579 × 771 m", "source": "maquette" }
+  ],
+  "sources": [
+    { "id": "synoptique", "label": "Synoptique de la station d'épuration STEP Béni Mellal", "detail": "Document affiché sur site, photographié lors de la visite du 10/12/2025." },
+    { "id": "rapport-visite", "label": "Rapport de visite de la station d'épuration des eaux usées de Béni Mellal", "detail": "F. Jedouane et I. Zerqtouni, sous la direction du Pr A. Arioua. FST Béni Mellal, Université Sultan Moulay Slimane, 2025-2026." },
+    { "id": "photos-visite", "label": "Photographies de la visite pédagogique", "detail": "Station d'épuration de Béni Mellal, 10/12/2025." },
+    { "id": "maquette", "label": "Maquette 3D de la STEP de Béni Mellal", "detail": "Ilyass Zerqtouni. Export du 28/10/2026, 1 unité = 1 mètre." }
+  ],
+  "about": {
+    "title": "Une maquette, un parcours.",
+    "text": "Ce site est un projet de visualisation numérique et de présentation interactive. Il propose une lecture pédagogique de la station d'épuration des eaux usées de Béni Mellal à partir d'une maquette 3D, de photographies de visite et de la documentation disponible.",
+    "signature": "Maquette 3D et conception de l'expérience numérique : Ilyass Zerqtouni",
+    "disclaimer": "La station est un ouvrage public dont la conception, la construction et l'exploitation relèvent de ses maîtres d'ouvrage et exploitants. Ce site n'en est pas la documentation officielle : les descriptions sont pédagogiques et chaque information technique renvoie à sa source.",
+    "credits": [
+      { "role": "Maquette 3D et conception de l'expérience numérique", "name": "Ilyass Zerqtouni" },
+      { "role": "Rapport de visite", "name": "Fathia Jedouane et Ilyass Zerqtouni" },
+      { "role": "Encadrement pédagogique", "name": "Pr Abdelkrim Arioua, FST Béni Mellal" },
+      { "role": "Photographies de visite", "name": "Visite pédagogique du 10/12/2025 (auteur à préciser)" }
+    ]
+  },
+  "sections": {
+    "hero": true,
+    "parcours": true,
+    "explorer": true,
+    "ouvrages": true,
+    "apres": true,
+    "apropos": true
+  }
+}
