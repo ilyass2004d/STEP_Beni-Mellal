@@ -107,7 +107,7 @@ export class StepViewer {
     this.controls.addEventListener('change', this.onControlsChange);
     this.controls.addEventListener('start', this.onControlsStart);
 
-    this.draco = new DRACOLoader().setDecoderPath('/draco/');
+    this.draco = new DRACOLoader().setDecoderPath(`${import.meta.env.BASE_URL}draco/`);
     this.loader = new GLTFLoader().setDRACOLoader(this.draco);
 
     const el = this.renderer.domElement;

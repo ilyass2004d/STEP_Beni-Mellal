@@ -19,7 +19,12 @@ const Admin = lazy(() => import('./admin/Admin'));
 export const ADMIN_ENABLED = import.meta.env.DEV || import.meta.env.VITE_ENABLE_ADMIN === 'true';
 
 function Root() {
-  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+  // strip the deployment sub-folder (e.g. /<repo>/ on GitHub Pages) before routing
+  const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+  let path = window.location.pathname;
+  if (base && path.startsWith(base)) path = path.slice(base.length);
+  path = path.replace(/\/+$/, '') || '/';
+  if (path === '/index.html') path = '/';
   if (path === '/') return <App />;
   if (path === '/admin' && ADMIN_ENABLED)
     return (

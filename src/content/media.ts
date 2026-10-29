@@ -15,6 +15,15 @@ export const KIND_LABEL: Record<MediaKind, string> = {
   video: 'Vidéo',
 };
 
+/**
+ * Content paths are written from the site root (`/media/...`). When the site is
+ * served from a sub-folder (GitHub Pages: /<repo>/), prefix them with Vite's base.
+ */
+export function withBase(path: string) {
+  if (!path.startsWith('/') || path.startsWith('//')) return path;
+  return import.meta.env.BASE_URL + path.slice(1);
+}
+
 export function isVideo(src: string) {
   return /\.(mp4|webm)(\?|$)/i.test(src);
 }
@@ -28,18 +37,19 @@ export interface ResolvedImage {
 export function resolveImage(src: string): ResolvedImage {
   for (const [prefix, widths] of Object.entries(GENERATED_WIDTHS)) {
     if (src.startsWith(prefix) && !/\.[a-z0-9]+$/i.test(src)) {
+      const base = withBase(src);
       return {
-        src: `${src}-${widths[0]}.webp`,
-        srcSet: widths.map((w) => `${src}-${w}.webp ${w}w`).join(', '),
+        src: `${base}-${widths[0]}.webp`,
+        srcSet: widths.map((w) => `${base}-${w}.webp ${w}w`).join(', '),
       };
     }
   }
-  return { src };
+  return { src: withBase(src) };
 }
 
 /** Poster image for a generated clip: /media/video/x.mp4 -> /media/video/x.webp */
 export function posterFor(src: string) {
-  return src.replace(/\.(mp4|webm)$/i, '.webp');
+  return withBase(src).replace(/\.(mp4|webm)$/i, '.webp');
 }
 
 // ---------------------------------------------------------------------------

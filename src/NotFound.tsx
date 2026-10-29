@@ -6,7 +6,7 @@ export function NotFound() {
         Ce chemin ne mène <em>nulle part.</em>
       </h1>
       <p className="section-lead">La page demandée n'existe pas ou a été déplacée.</p>
-      <a className="btn btn--primary" href="/">
+      <a className="btn btn--primary" href={import.meta.env.BASE_URL}>
         Revenir à l'accueil
       </a>
     </main>

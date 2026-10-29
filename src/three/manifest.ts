@@ -17,7 +17,7 @@ export interface Manifest {
   site: { min: [number, number, number]; max: [number, number, number] };
 }
 
-export const MODEL_BASE = '/models/';
+export const MODEL_BASE = `${import.meta.env.BASE_URL}models/`;
 
 let pending: Promise<Manifest> | null = null;
 

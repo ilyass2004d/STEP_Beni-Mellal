@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { MediaRef, SiteContent, StepComponent } from '../content/types';
+import { withBase } from '../content/media';
 import { Gallery } from './media/Gallery';
 
 export const VERIFICATION_LABEL: Record<StepComponent['verification'], string> = {
@@ -69,7 +70,7 @@ export function InfoPanel({ component: c, content, headingLevel = 2, onClose, ac
       {c.video?.src && (
         <section>
           <S className="label">Vidéo</S>
-          <video className="info-panel__video" src={c.video.src} controls preload="none" aria-label={c.video.alt} />
+          <video className="info-panel__video" src={withBase(c.video.src)} controls preload="none" aria-label={c.video.alt} />
         </section>
       )}
 

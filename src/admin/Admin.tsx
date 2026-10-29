@@ -405,7 +405,7 @@ export default function Admin() {
                     <em>(dans ce navigateur uniquement)</em>
                   </span>
                 </label>
-                <a className="a-btn" href="/" target="_blank" rel="noreferrer">
+                <a className="a-btn" href={import.meta.env.BASE_URL} target="_blank" rel="noreferrer">
                   Ouvrir le site
                 </a>
               </fieldset>
@@ -486,7 +486,7 @@ function AdminHeader({ dirty, preview }: { dirty: boolean; preview: boolean }) {
         {dirty ? 'Brouillon local différent de la version publiée' : 'Identique à la version publiée'}
         {preview && ' · aperçu actif'}
       </p>
-      <a className="a-btn" href="/">
+      <a className="a-btn" href={import.meta.env.BASE_URL}>
         Retour au site
       </a>
     </header>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { posterFor } from '../../content/media';
+import { posterFor, withBase } from '../../content/media';
 import { useReducedMotion } from '../../hooks/useReducedMotion';
 
 interface Props {
@@ -43,7 +43,7 @@ export function LoopVideo({ src, label, active, load, playbackRate = 1, classNam
         <video
           ref={ref}
           className="loop-video__video"
-          src={src}
+          src={withBase(src)}
           muted
           loop
           playsInline
