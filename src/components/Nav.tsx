@@ -62,7 +62,13 @@ export function Nav({ sections }: { sections: SiteContent['sections'] }) {
   return (
     <header className={`nav nav--${tone} ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <a className="nav__brand" href="#accueil" aria-label="STEP de Béni Mellal, retour à l'accueil">
-        <span className="nav__mark" aria-hidden="true" />
+        <svg className="nav__mark" viewBox="132 82 248 348" aria-hidden="true" focusable="false">
+          <clipPath id="nav-drop">
+            <path d="M256 82C256 82 132 222 132 306a124 124 0 0 0 248 0C380 222 256 82 256 82Z" />
+          </clipPath>
+          <path className="nav__mark-raw" d="M256 82C256 82 132 222 132 306a124 124 0 0 0 248 0C380 222 256 82 256 82Z" />
+          <path className="nav__mark-clear" d="M100 318C150 292 202 292 256 318S362 344 412 318V460H100Z" clipPath="url(#nav-drop)" />
+        </svg>
         <span>
           STEP <em>Béni Mellal</em>
         </span>

@@ -479,16 +479,27 @@ li[id] {
   opacity: 0.65;
 }
 
+/* same drop as the favicon: raw water above, treated water below */
 .nav__mark {
-  width: 22px;
-  height: 22px;
-  border: 1.5px solid var(--water);
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
+  width: 18px;
+  height: 25px;
+  flex: none;
 }
 
-.nav--light .nav__mark {
-  border-color: var(--forest);
+.nav__mark-raw {
+  fill: var(--water);
+}
+
+.nav__mark-clear {
+  fill: var(--aqua);
+}
+
+.nav--light .nav__mark-raw {
+  fill: var(--forest);
+}
+
+.nav--light .nav__mark-clear {
+  fill: var(--water);
 }
 
 .nav__links {

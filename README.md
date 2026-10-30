@@ -1,37 +1,20 @@
-# STEP de Béni Mellal · L'eau en devenir
+# STEP de Béni Mellal — expérience numérique
 
-Site immersif présentant la station d'épuration des eaux usées de Béni Mellal : récit au défilement, explorateur 3D de la maquette, fiches des ouvrages et administration du contenu.
+Site immersif présentant la station d'épuration des eaux usées de Béni Mellal : récit cinématographique au défilement, explorateur 3D de la maquette réelle, fiches des ouvrages et administration du contenu.
 
 Maquette 3D et conception de l'expérience numérique : Ilyass Zerqtouni.
 
-Version 0.1, première version complète (octobre 2026).
-
 ## Démarrer
 
-Prérequis : Node.js 18 ou plus récent.
-
 ```bash
+cd site
 npm install
 npm run dev        # http://localhost:5173  (admin : http://localhost:5173/admin)
 npm run build      # vérification TypeScript + build dans dist/
 npm run preview    # sert dist/ sur http://localhost:4173
 ```
 
-Tous les médias nécessaires (`public/media`, `public/models`, `public/draco`) sont inclus dans le dépôt : le site fonctionne directement après `npm install`.
-
-## Mise en ligne (GitHub Pages)
-
-Le workflow `.github/workflows/deploy.yml` construit et publie le site à chaque envoi sur la branche `main`.
-
-1. Dans le dépôt : **Settings → Pages → Build and deployment → Source : GitHub Actions** (une seule fois).
-2. Envoyer les fichiers sur `main`, ou relancer le workflow depuis l'onglet **Actions**.
-3. Le site est publié à l'adresse `https://<utilisateur>.github.io/<nom-du-dépôt>/`.
-
-Le chemin du dépôt est pris en compte automatiquement (`--base`). Pour un autre hébergeur servi à la racine du domaine (Netlify, Vercel…), un simple `npm run build` suffit : publier le dossier `dist/`.
-
-### Régénérer les médias (facultatif)
-
-`tools/prepare_assets.py` reconstruit les médias à partir des fichiers de travail (photos HEIC, rendus Blender, exports GLB, vidéo source). Ces fichiers ne font pas partie du dépôt : le script s'attend à ce que le dépôt soit placé dans le dossier de travail du projet.
+Les médias générés (`public/media`, `public/models`, `public/draco`) sont produits à partir des dossiers du projet :
 
 ```bash
 pip install pillow pillow-heif imageio-ffmpeg

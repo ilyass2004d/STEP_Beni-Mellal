@@ -1,0 +1,16 @@
+{
+  "name": "STEP de Béni Mellal · L'eau en devenir",
+  "short_name": "STEP Béni Mellal",
+  "description": "La station d'épuration de Béni Mellal explorée en 3D.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0D2722",
+  "theme_color": "#153D35",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
